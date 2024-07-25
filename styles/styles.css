@@ -19,7 +19,6 @@
 }
 
 .content {
-    background-color: yellow;
     display: grid;
     grid-template-columns: 10rem calc(100% - 10rem);
 }
@@ -29,17 +28,18 @@
 }
 
 .main-content {
-    background-color: blue;
     display: grid;
     grid-template-rows: 2rem calc(100% - 2rem);
-}
-
-.menu-bar {
-    background-color: purple;
-}
+}   
 
 .main-content-holder {
     background-color: black;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-top: 20px;
+    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .brand {
@@ -122,4 +122,37 @@
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 40px;
-    }
+}
+
+
+.menu-bar
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;  
+    padding-left: 20px;
+
+}
+
+.menu-item
+{
+    list-style-type: none;
+    float: left;
+    margin: 5px;
+    background-color: #ffffff1a;
+    border-radius: 8px;
+    padding: 8px;
+    color: #f1f1f1;
+    font-size: smaller;
+    font-family: "Roboto","Arial",sans-serif;
+}
+
+.yt-video-struct
+{
+    width: 18rem;
+    height: 18rem;
+    background-color: red;
+    margin: 10px;
+}
